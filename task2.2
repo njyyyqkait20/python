@@ -1,0 +1,9 @@
+print ("Электронная книга по программированию на английском состоит из S страниц.\n""В среднем на странице C строк по N символов.\n""используется кодировка UTF-8. определите объем текстового файла в Кбайтах")
+pages = int(input("Введите количество страниц: "))
+lines = int(input("Введите количество строк: "))
+symbols = int(input("Введите количество символов: "))
+all_symbols = pages * lines * symbols
+kilobytes = all_symbols / 1024
+print(f"{pages} * {lines} * {pages} = {all_symbols}")
+print(f"{all_symbols} / 1024 = {kilobytes}")
+print(f"Ответ: {kilobytes}")
