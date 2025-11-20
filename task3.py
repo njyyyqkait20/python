@@ -13,3 +13,15 @@ num_2 = 4
 num_3 = 2
 multiplying = num_1 * num_2 * num_3
 print(f"Умножение всех чисел: {multiplying}")
+division = (num_1 / num_2) / num_3
+print(f"Деление: {division}")
+num_1 = 2
+num_2 = 3
+num_3 = 4
+degree = num_1 ** num_2 ** num_3
+print(f"Числа в степени {degree}")  
+num_1 = 2
+num_2 = 8
+num_3 = 5
+math = ((43 + num_1)+ (num_2 + 67)- (num_3 * 2)) // 2
+print(math)
