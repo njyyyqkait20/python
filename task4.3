@@ -1,0 +1,18 @@
+import math
+a = input("Введите форму комнаты(с заглавной буквы!!!): ")
+if a == "Треугольная":
+    side1_triangle = int(input("Первая сторона комнаты: "))
+    side2_triangle = int(input("Вторая сторона комнаты: "))
+    side3_triangle = int(input("Третья сторона комнаты: "))
+    p = (side1_triangle + side2_triangle + side3_triangle) /2
+    S_triangle = math.sqrt(p * (p-side1_triangle) * (p-side2_triangle) * (p-side3_triangle))
+    print(f"площадь треугольной комнаты равна {S_triangle}")
+elif a == "Прямоугольная":
+    side1_rectangle = int(input("Первая сторона комнаты: "))
+    side2_rectangle = int(input("Вторая сторона комнаты: "))
+    S_rectangle = side1_rectangle * side2_rectangle
+    print(f"площадь прямоугольной комнаты равна {S_rectangle}")
+elif a == "Круглая":
+    radius_circle = int(input("Введите радиус круга: "))
+    S_circle = 3.14 * radius_circle
+    print(f"площадь круглой комнаты равна {S_circle}")
