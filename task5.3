@@ -1,0 +1,10 @@
+num = int(input("Введите количество программистов: "))
+if 11 <= num % 100 <= 14:
+    print(f"{num} программистов")
+else:
+    last_digit = num % 10
+    
+    if last_digit == 1:
+        print(f"{num} программист")
+    elif 2 <= last_digit <= 4:
+        print(f"{num} программиста")
