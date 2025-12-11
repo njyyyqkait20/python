@@ -38,3 +38,44 @@ if num < 100:
     print(num * "*")
 elif num > 100:
     print("*")
+
+    Задание 2
+text1 = input("Введите первую строчку: ")
+text2 = input("Введите вторую строчку: ")
+if text1 == text2:
+    print(True)
+else:
+    print(False)
+
+  Задание 3
+r = int(input("Введите значение красного цвета: "))
+g = int(input("Введите значение зеленого цвета: "))
+b = int(input("Введите значение синего цвета: "))
+if r == 0 and g == 0 and b == 0:
+    print("Чёрный цвет")
+elif r == 255 and g == 255 and b == 255:
+    print("Белый цвет")
+elif r == 255 and g == 0 and b == 0:
+    print("Красный цвет")
+elif r == 0 and g == 255 and b == 0:
+    print("Зеленый цвет")
+elif r == 0 and g == 0 and b == 255:
+    print("Синий цвет")
+else:
+    print("Нет цвета")
+
+  Вариант 3
+
+    Задание 1
+text = 'important information in one line'
+sym = input("Введите букву, а программа проверит есть ли она в данной строке: ")
+if sym in text:
+    print(True)
+else:
+    print(False)
+
+    Задание 2
+a = int(input("Введите первую сторону: "))
+b = int(input("Введите вторую сторону: "))
+if a == b:
+    
