@@ -67,6 +67,45 @@ else:
   Вариант 3
 
     Задание 1
+num = int(input("Введите число: "))
+if num > 0:
+    print(num - 1, num, num + 1)
+elif num < 0 or num == 0:
+    num = 1
+    print(num)
+
+    Задание 2
+
+def get_file_type(filename):
+    extensions = {
+        'doc': 'Word file',
+        'docx': 'Word file',
+        'py': 'Python file',
+        'txt': 'Text file'
+    } 
+    parts = filename.split('.')
+    if len(parts) < 2:
+        return "Файл не имеет расширения"
+    extension = parts[-1].lower()
+    return extensions.get(extension, f"Неизвестное расширение: .{extension}")
+filename = input("Введите имя файла с расширением: ")
+file_type = get_file_type(filename)
+print(file_type)
+
+    Задание 3
+side1 = int(input("Введите первую сторону: "))
+side2 = int(input("Введите вторую сторону: "))
+side3 = int(input("Введите третью сторону: "))
+if side1 == side2 and side2 == side3 and side3 == side1:
+    print("Равносторнний")
+elif side1 != side2 and side2 != side3 and side3 != side1:
+    print("Разносторонний")
+elif side1 == side2 or side2 == side3 or side3 == side1:
+    print("Равнобедренный")
+
+  Вариант 4
+
+    Задание 1
 text = 'important information in one line'
 sym = input("Введите букву, а программа проверит есть ли она в данной строке: ")
 if sym in text:
@@ -75,7 +114,52 @@ else:
     print(False)
 
     Задание 2
-a = int(input("Введите первую сторону: "))
-b = int(input("Введите вторую сторону: "))
-if a == b:
-    
+side1 = int(input("Введите первую сторону: "))
+side2 = int(input("Введите вторую сторону: "))
+if side1 == side2:
+    print(f"Это квадрат, плошадь квадрата равна {side1**2}")
+else:
+    print(f"Это прямоугольник, плошадь прямоугольника равна {side1*side2}")
+
+    Задание 3
+  question = input("Привет, как твои дела? ")
+if question == "хорошо" or question == "нормально" or question == "отлично":
+    print("🙂")
+elif question == "плохо" or question == "не хорошо" or question == "...":
+    print("🙁")
+else:
+    print("😐")
+
+  Вариант 5
+    Задание 1
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
+if num1 > num2:
+    print(num1**num2)
+elif num2 > num1:
+    print(num2**num1)
+elif num1 == num2:
+    print(num1+num2)
+
+    Задание2
+new_message = "Hello! How are you?"
+print(new_message)
+answer = input()
+lenght_to_compare = 5
+if len(answer) >= lenght_to_compare:
+    message_start = new_message[0:lenght_to_compare]
+    answer_start = answer[0:lenght_to_compare]
+
+    if message_start == answer_start:
+        print(True)
+    else:
+        print(False)
+  Задание 3
+num1 = int(input("Введите первый отрезок: "))
+num2 = int(input("Введите второй отрезок: "))
+if num1 > num2:
+    print(f"Отрезок {num1} больше отрезка {num2} на {num1 - num2}")
+elif num1 < num2:
+    print(f"Отрезок {num2} больше отрезка {num1} на {num2 - num1}")
+else:
+    print("Отрезки равны")
