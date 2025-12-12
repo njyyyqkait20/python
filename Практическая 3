@@ -1,0 +1,80 @@
+Задание 1
+
+
+total_minutes = int(input("Введите минуты: "))
+hours = total_minutes // 60
+minutes = total_minutes % 60
+print(hours)
+print(minutes)
+
+Задание 2
+
+a = int(input("Минимальное рекомендованное время сна: "))
+b = int(input("Максимальное рекомендованное время сна: "))
+h = int(input("Время сна Ани: "))
+if h<a:
+    print("Недосып")
+elif h>b:
+    print("Пересып")
+else:
+    print("Это нормально")
+
+Задание 3
+
+import math
+a = int(input("Введите первую сторону треугольника: "))
+b = int(input("Введите вторую сторону треугольника: "))
+c = int(input("Введите третью сторону треугольника: "))
+p = (a + b + c ) / 2
+S = math.sqrt(p * (p-a) * (p-b) * (p-c))
+print(f"Площадь треугольника {S}")
+
+Задание 4
+
+import math
+a = input("Введите форму комнаты(с заглавной буквы!!!): ")
+if a == "Треугольная":
+    side1_triangle = int(input("Первая сторона комнаты: "))
+    side2_triangle = int(input("Вторая сторона комнаты: "))
+    side3_triangle = int(input("Третья сторона комнаты: "))
+    p = (side1_triangle + side2_triangle + side3_triangle) /2
+    S_triangle = math.sqrt(p * (p-side1_triangle) * (p-side2_triangle) * (p-side3_triangle))
+    print(f"площадь треугольной комнаты равна {S_triangle}")
+elif a == "Прямоугольная":
+    side1_rectangle = int(input("Первая сторона комнаты: "))
+    side2_rectangle = int(input("Вторая сторона комнаты: "))
+    S_rectangle = side1_rectangle * side2_rectangle
+    print(f"площадь прямоугольной комнаты равна {S_rectangle}")
+elif a == "Круглая":
+    radius_circle = int(input("Введите радиус круга: "))
+    S_circle = 3.14 * radius_circle
+    print(f"площадь круглой комнаты равна {S_circle}")
+
+Задание 5
+
+num = int(input("Введите количество программистов: "))
+if 11 <= num % 100 <= 14:
+    print(f"{num} программистов")
+else:
+    last_digit = num % 10
+    
+    if last_digit == 1:
+        print(f"{num} программист")
+    elif 2 <= last_digit <= 4:
+        print(f"{num} программиста")
+
+Задание 6
+
+ticket = input("Введите номер билета: ")
+n1 = int(ticket[0])
+n2 = int(ticket[1])
+n3 = int(ticket[2])
+n4 = int(ticket[3])
+n5 = int(ticket[4])
+n6 = int(ticket[5])
+first_sum = n1 + n2 + n3
+second_sum = n4 + n5 + n6
+if first_sum == second_sum:
+    print("Счастливый")
+else:
+    print("Не повезло")
