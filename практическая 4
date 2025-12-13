@@ -163,3 +163,41 @@ elif num1 < num2:
     print(f"Отрезок {num2} больше отрезка {num1} на {num2 - num1}")
 else:
     print("Отрезки равны")
+  Вариант 6
+    Задание 1
+
+    Задание 2
+num = int(input("Введите число: "))
+if num % 2 == 0:
+    print(num**2)
+elif num % 3 == 0:
+    print(num**3)
+else:
+    print(num*100)
+
+    Задание 3
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
+if num1 < 0:
+    num1 + 1000
+    print(num2)
+elif num2 < 0:
+    num2 + 1000
+    print(num1)
+elif num1 > 0 and num2 > 0:
+    print(True)
+else:
+    print(False)
+  Вараинт 7
+    Задание 1
+
+    Задание 2
+num1 = int(input("Введите первую сторону: "))
+num2 = int(input("Введите вторую сторону: "))
+num3 = int(input("Введите третью сторону: "))
+if num1<0 or num2<0 or num3<0:
+    print(False)
+else:
+    print(True)
+
+    Задание 3
