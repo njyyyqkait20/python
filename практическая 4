@@ -165,7 +165,14 @@ else:
     print("Отрезки равны")
   Вариант 6
     Задание 1
-
+user_string = input("Введите произвольную строку: ")
+if len(user_string) > 0:
+    first_char = user_string[0]
+    last_char = user_string[-1]
+    if first_char == last_char:
+        print(True)
+    else:
+        print(False)
     Задание 2
 num = int(input("Введите число: "))
 if num % 2 == 0:
