@@ -197,7 +197,16 @@ else:
     print(False)
   Вараинт 7
     Задание 1
-
+text = input("Введите строку: ")
+clean_text = text.strip().lower()
+if clean_text:
+    last_char = clean_text[-1]
+    if last_char in ['я', 'и', 'е', 'ю']:
+        print(True)
+    else:
+        print(False)
+else:
+    print("Строка пуста")
     Задание 2
 num1 = int(input("Введите первую сторону: "))
 num2 = int(input("Введите вторую сторону: "))
@@ -206,5 +215,22 @@ if num1<0 or num2<0 or num3<0:
     print(False)
 else:
     print(True)
+
+    Задание 3
+num = int(input("Введите число: "))
+last_digit = abs(num) % 10
+if last_digit == 0:
+    print(f"Степень 10: {num ** 10}")
+elif last_digit == 1:
+    print(f"Остаток от деления на 3: {num % 3}")
+elif last_digit == 2:
+    print(f"Целочисленное деление на 2: {num // 2}")
+elif last_digit >= 3:
+    print(f"Квадрат числа: {num ** 2}")
+
+  Вариант 8
+    Задание 1
+
+    Задание 2
 
     Задание 3
