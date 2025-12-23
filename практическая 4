@@ -230,7 +230,55 @@ elif last_digit >= 3:
 
   Вариант 8
     Задание 1
+password = input("Введите пароль: ")
+if len(password) < 8 or password == "qwerty123":
+    print(False)
+else:
+    print(True)
 
     Задание 2
+pc_number = 777
+num1 = int(input("Введите первое число: "))
+num2 = int(input("Введите второе число: "))
+if (num1<pc_number<num2) or (num2<pc_number<num1):
+     print(True)
+else:
+    print(False)
 
     Задание 3
+lamp_1 = 0
+lamp_2 = 0
+question = int(input("Какую лампочку зажечь?   "))
+if question == 1:
+    lamp_1 = lamp_1 + 1
+elif question == 2:
+     lamp_2 = lamp_2 + 1
+else:
+     print("Обе лампочки не горят")
+
+  Вариант 9
+
+    Задание 1
+switch_1 = False
+switch_2 = False
+question = input("Включить?   ")
+if question  == "Да" or question == "да":
+    switch_1 = True
+    switch_2 = True
+    print(f"Всё включено, switch_1 = {switch_1}, switch_2 = {switch_2}")
+else:
+    print(f"Значения разъемов switch_1 и switch_2  соответственно равны {switch_1} и {switch_2}")
+
+    Задание 2
+num = int(input("Введите число: "))
+if num > 0 and num % 2 == 0:
+    print("True, even")
+elif num > 0 and num % 2 != 0:
+    print("True, odd")
+else:
+    print("False")
+
+    Задание 3
+
+
+  Вариант 10
